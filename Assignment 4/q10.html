@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Import Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>My Portfolio</title>
+<style>
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* Header with gradient background */
+  header {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+  }
+
+  /* Sections styling */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  /* Images with opacity */
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Photo caption or overlay */
+.caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+  }
+
+  /* Buttons with effects */
+button {
+    background-color: #4facfe;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+button:hover {
+    background-color: #00f2fe;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Hello! I'm a passionate web developer & uiux designer with a love for modern CSS effects and clean design.</p>
+</section>
+
+<section>
+  <h2>My Projects</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 1" style="opacity: 0.8;">
+      <div class="caption">Project One</div>
+    </div>
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 2" style="opacity: 0.8;">
+      <div class="caption">Project Two</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Me</h2>
+  <button>Send Message</button>
+</section>
+
+</body>
+</html>

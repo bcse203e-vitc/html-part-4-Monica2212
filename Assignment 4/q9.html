@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Buttons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        .btn-save {
+            background-color: #28a745;
+        }
+
+        .btn-cancel {
+            background-color: #dc3545;
+        }
+
+        .btn-submit {
+            background-color: #007bff;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            filter: brightness(110%);
+        }
+
+        .btn:active {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="btn btn-save">Save</button>
+        <button class="btn btn-cancel">Cancel</button>
+        <button class="btn btn-submit">Submit</button>
+    </div>
+</body>
+</html>

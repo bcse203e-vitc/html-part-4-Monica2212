@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            padding: 1em;
+            background: #f0f0f0;
+        }
+        .box {
+            background: #fff;
+            width: 250px;
+        }
+        .box h2 {
+            margin: 0;
+            padding: 0.5em;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .box p {
+            margin: 0;
+            padding: 0.5em;
+            color: #34495e;
+        }
+        #box1 { margin: 30px; padding: 10px; border: 5px solid #e74c3c; }
+        #box1-container { background: #f1c40f; padding: 30px; }
+        #box2 { margin: 10px; padding: 20px; border: 5px dashed #3498db; }
+        #box2-container { background: #2ecc71; padding: 10px; }
+        #box3 { margin: 15px; padding: 15px; border: 10px double #8e4aa8; }
+        #box3-container { background: #e67e22; padding: 15px; }
+    </style>
+</head>
+<body>
+    <div id="box1-container"><div id="box1" class="box"><h2>Box 1</h2><p>Large margin (yellow), small padding, red border.</p></div></div>
+    <div id="box2-container"><div id="box2" class="box"><h2>Box 2</h2><p>Small margin (green), large padding, blue dashed border.</p></div></div>
+    <div id="box3-container"><div id="box3" class="box"><h2>Box 3</h2><p>Medium margin (orange), medium padding, purple double border.</p></div></div>
+</body>
+</html>
